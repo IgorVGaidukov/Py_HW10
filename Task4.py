@@ -8,3 +8,10 @@
 Подсказки:
 --- используйте списки и циклы, не дублируйте функции
 """
+
+words = ['разработка', 'администрирование', 'protocol', 'standard']
+
+for el in words:
+    str_bytes = el.encode('utf-8')
+    bytes_str = str_bytes.decode('utf-8')
+    print(f'Слово - "{el}", строка->байты - {str_bytes}, ,байты->строка - {bytes_str}')
