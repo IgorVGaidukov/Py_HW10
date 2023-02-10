@@ -10,3 +10,13 @@
 --- b'class' - используйте маркировку b''
 --- используйте списки и циклы, не дублируйте функции
 """
+
+words = [b'class', b'function', b'method']
+
+
+def print_words(lst):
+    for el in lst:
+        print(f'тип - {type(el)}, содержимое - {el}, длина - {len(el)}')
+
+
+print_words(words)
